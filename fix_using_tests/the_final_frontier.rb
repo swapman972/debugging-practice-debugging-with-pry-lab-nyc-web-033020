@@ -14,14 +14,11 @@ def crew
 end
 
 def greet_crew (list)
-  list.each do 
-    |n| "Hello " + n +"."
-  end
+  list.each {|n| "Hello " + n +"."}
 end
 
 def engage
   date = generate_star_date
   state_log(date)
   greet_crew(crew)
-  binding.pry
 end
