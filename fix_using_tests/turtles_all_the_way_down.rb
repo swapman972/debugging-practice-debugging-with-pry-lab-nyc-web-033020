@@ -13,7 +13,7 @@ def turtle_traits(turtles)
   turtles.map do |turtle|
     turtle.each do |trait, value|
       if trait == :traits
-        if value.kind_of?(value)
+        if value.kind_of?(Array)
           array_ans << value
         else
           array = []
