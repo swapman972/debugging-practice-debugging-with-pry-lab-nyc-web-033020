@@ -17,7 +17,7 @@ def greet_crew (list)
   new_array = list.each do 
     |n| n = "Hello #{n}."
   end
-  return new_array
+  new_array
   binding.pry
 end
 
