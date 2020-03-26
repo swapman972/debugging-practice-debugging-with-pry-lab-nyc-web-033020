@@ -18,6 +18,7 @@ def greet_crew (list)
     |n| n = "Hello #{n}."
   end
   return new_array
+  binding.pry
 end
 
 def engage
