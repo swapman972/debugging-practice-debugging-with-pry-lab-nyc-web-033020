@@ -11,7 +11,7 @@ end
 def turtle_traits(turtles)
   array_ans =[]
   turtles.map do |turtle|
-    turtle.each do |trait, value|
+    turtle.map do |trait, value|
       if trait == :trait
         array_ans << value
       end
