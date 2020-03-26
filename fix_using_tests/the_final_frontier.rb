@@ -14,11 +14,10 @@ def crew
 end
 
 def greet_crew (list)
-  new_array = list.each do 
+  new_array = list.map do 
     |n| n = "Hello #{n}."
   end
   new_array
-  binding.pry
 end
 
 def engage
