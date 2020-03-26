@@ -13,8 +13,8 @@ def crew
   ["Geordi", "Data", "Worf", "William", "Beverly", "Deanna"]
 end
 
-def greet_crew (crew)
-  crew.each do 
+def greet_crew (list)
+  list.each do 
     |n| "Hello " + n +"."
   end
 end
