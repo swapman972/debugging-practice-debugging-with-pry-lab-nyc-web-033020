@@ -9,10 +9,12 @@ def turtles
 end
 
 def turtle_traits(turtles)
+  array_ans =[]
   turtles.map do |turtle|
-    turtle[:traits].each do |trait|
-      trait
-      binding.pry
+    turtle.each do |trait|
+      if trait == :trait
+        array_ans << trait
+      end
     end
   end
 end
