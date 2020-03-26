@@ -14,9 +14,10 @@ def crew
 end
 
 def greet_crew (crew)
-  crew.each do 
+  new_array = crew.each do 
     |n| "Hello " + n +"."
   end
+  new_array
 end
 
 def engage
