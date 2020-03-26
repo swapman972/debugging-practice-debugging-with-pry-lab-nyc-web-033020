@@ -15,7 +15,7 @@ end
 
 def greet_crew (list)
   list.each do 
-    |n| "Hello #{n}."
+    |n| n = "Hello #{n}."
     binding.pry
   end
 end
