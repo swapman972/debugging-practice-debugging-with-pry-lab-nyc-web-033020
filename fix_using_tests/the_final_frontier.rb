@@ -14,14 +14,14 @@ def crew
 end
 
 def greet_crew (crew)
-  new_array = crew.each do 
+  crew.each do 
     |n| "Hello " + n +"."
   end
-  new_array
 end
 
 def engage
   date = generate_star_date
   state_log(date)
   greet_crew(crew)
+  binding.pry
 end
