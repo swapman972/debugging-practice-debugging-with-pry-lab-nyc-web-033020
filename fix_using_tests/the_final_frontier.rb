@@ -17,7 +17,7 @@ def greet_crew (list)
   new_array = list.each do 
     |n| n = "Hello #{n}."
   end
-  new_array
+  return new_array
 end
 
 def engage
