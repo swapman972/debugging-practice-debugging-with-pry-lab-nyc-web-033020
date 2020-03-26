@@ -14,8 +14,10 @@ def crew
 end
 
 def greet_crew (list)
-  list.each {|n| "Hello " + n +"."}
-  binding.pry
+  list.each do 
+    |n| "Hello " + n +"."
+    binding.pry
+  end
 end
 
 def engage
