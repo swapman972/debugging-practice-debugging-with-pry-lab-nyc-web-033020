@@ -12,9 +12,8 @@ def turtle_traits(turtles)
   array_ans =[]
   turtles.map do |turtle|
     turtle.each do |trait, value|
-      binding.pry
       if trait == :trait
-        array_ans << trait
+        array_ans << value
       end
     end
   end
