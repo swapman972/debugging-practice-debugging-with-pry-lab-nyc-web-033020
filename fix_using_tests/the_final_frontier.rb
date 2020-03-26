@@ -14,7 +14,7 @@ def crew
 end
 
 def greet_crew (list)
-  new_array = list.map do 
+  new_array = list.each do 
     |n| n = "Hello #{n}."
   end
   new_array
