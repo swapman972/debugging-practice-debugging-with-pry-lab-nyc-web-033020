@@ -1,4 +1,4 @@
-
+require 'pry'
 def turtles
     [
       {name: "Donatello", weapon: "bo-staff", traits: ["serious", "leader"]},
@@ -9,9 +9,19 @@ def turtles
 end
 
 def turtle_traits(turtles)
+  array_ans =[]
   turtles.map do |turtle|
-    turtle[:traits].each do |trait|
-      trait
+    turtle.each do |trait, value|
+      if trait == :traits
+        if value.kind_of?(Array)
+          array_ans << value
+        else
+          array = []
+          array << value
+          array_ans << array
+        end
+      end
     end
   end
+  array_ans
 end
