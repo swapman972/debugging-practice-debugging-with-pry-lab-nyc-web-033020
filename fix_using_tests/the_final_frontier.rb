@@ -14,7 +14,9 @@ def crew
 end
 
 def greet_crew (crew)
-  crew.each { |n| "Hello " + n +"."}
+  crew.each do 
+    |n| "Hello " + n +"."
+  end
 end
 
 def engage
