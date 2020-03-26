@@ -17,4 +17,5 @@ def turtle_traits(turtles)
       end
     end
   end
+  array_ans
 end
